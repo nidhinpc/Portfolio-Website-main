@@ -4,8 +4,8 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
-  DiNodejs,
-  DiMongodb,
+  // DiNodejs,
+  // DiMongodb,
   DiGit,
   DiHtml5,
   DiCss3,
@@ -33,18 +33,18 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiFlutter />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <SiExpress />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>

@@ -51,8 +51,8 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             I hold a BCA degree from{" "}
             <span className="purple">(Mahatma Gandhi University)</span>, and I’m
-            constantly exploring the latest in mobile and web technologies to
-            keep my work ahead of the curve.
+            constantly exploring the latest in mobile technologies to keep my
+            work ahead of the curve.
             <br />
             <br />
             If you're looking for a reliable developer who genuinely cares about
