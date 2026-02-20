@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;900&display=swap");
+
+:root {
+  /* Core Colors */
+  --primary: #c084fc;
+  --primary-color: #c084fc;
+  --primary-glow: rgba(192, 132, 252, 0.5);
+  --secondary: #6366f1;
+  --secondary-color: #6366f1;
+  --accent: #f472b6;
+  --bg-dark: #030014;
+  --bg-color: #030014;
+  --bg-card: rgba(15, 12, 33, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-main: #f8fafc;
+  --text-primary: #f8fafc;
+  --text-dim: #94a3b8;
+  --nav-bg: rgba(3, 0, 20, 0.85);
+
+  /* Gradients */
+  --accent-gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+  --mesh-gradient: radial-gradient(at 0% 0%, rgba(192, 132, 252, 0.12) 0, transparent 50%),
+                   radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0, transparent 50%),
+                   radial-gradient(at 100% 0%, rgba(244, 114, 182, 0.08) 0, transparent 50%);
+}
+
+/* 🛑 Emergency Dark Mode Override 🛑 */
+html, body, #root, .App {
+  background-color: #030014 !important;
+  color: #f8fafc !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  font-family: "Outfit", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Mesh Gradient Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--mesh-gradient);
+  z-index: 0; /* Above body color, below content */
+  pointer-events: none;
+}
+
+.App {
+  position: relative;
+  z-index: 10;
+}
+
+#tsparticles {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 5 !important; /* Above body::before, below content */
+  opacity: 0.5;
+  background: transparent !important;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030014;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-gradient);
+  border-radius: 5px;
+}
+
+/* Fix for light sections */
+section, .container-fluid, .container {
+  background-color: transparent !important;
+}
