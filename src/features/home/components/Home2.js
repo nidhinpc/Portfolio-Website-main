@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../../assets/avatar.png";
-import Tilt from "react-parallax-tilt";
+import homeLogo from "../../../assets/home-main.png";
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -26,59 +25,58 @@ function Home2() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h1 style={{ fontSize: "2.8em", fontWeight: "800" }}>
+              <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "30px" }}>
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
-              <p className="home-about-body" style={{ fontSize: "1.2rem", lineHeight: "1.8" }}>
-                Need a <span className="purple">stunning, high-performance</span> mobile app? I’ve got you
-                covered. 💼📱
-                <br />
-                <br />
-                I'm a professional
-                <i>
-                  <b className="purple"> Flutter Developer </b>
-                </i>
-                who builds pixel-perfect, cross-platform mobile apps for both
-                Android and iOS.
-                <br />
-                <br />I specialize in crafting responsive UIs and scalable apps
-                using&nbsp;
-                <i>
-                  <b className="purple">Flutter & Dart</b>
-                </i>
-                , and integrate backend features with
-                <b className="purple"> Firebase</b> for real-time performance.
-                <br />
-                <br />
-                Whether you’re a startup or a business, I can bring your ideas to
-                life with <span className="purple">clean code</span> and <span className="purple">beautiful UI/UX</span> — on time and budget.
-                <br />
-                <br />
-                Let’s collaborate and build something impactful. 🚀
-              </p>
+              
+              <div className="home-about-body" style={{ fontSize: "1.2rem", lineHeight: "1.8", color: "var(--text-dim)" }}>
+                <p>
+                  I am a professional <b className="purple">Mobile Application Developer</b> specializing in creating pixel-perfect, cross-platform mobile experiences for iOS and Android. With a strong foundation in <b className="purple">Flutter & Dart</b>, I engineer applications that are as performant as they are visually engaging.
+                </p>
+                <p className="mt-4">
+                  My architecture focuses on clean code, scalable MVVM/Clean Architecture patterns, and seamless integrations with cloud services like <b className="purple">Firebase</b>. Whether it’s real-time chat, e-commerce, or complex fintech platforms, I build solutions tailored for the modern digital ecosystem.
+                </p>
+                
+                {/* Quick Facts Section */}
+                <Row className="quick-facts mt-5 mb-4 g-4">
+                  <Col sm={4}>
+                    <div className="fact-glass-card p-3 text-center">
+                      <h3 className="purple fw-bold mb-1">1+</h3>
+                      <p className="mb-0 text-sm">Years Experience</p>
+                    </div>
+                  </Col>
+                  <Col sm={4}>
+                    <div className="fact-glass-card p-3 text-center">
+                      <h3 className="purple fw-bold mb-1">10+</h3>
+                      <p className="mb-0 text-sm">Projects Delivered</p>
+                    </div>
+                  </Col>
+                  <Col sm={4}>
+                    <div className="fact-glass-card p-3 text-center">
+                      <h3 className="purple fw-bold mb-1">100%</h3>
+                      <p className="mb-0 text-sm">Store Approval Rate</p>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
             </motion.div>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt tiltMaxAngleX={20} tiltMaxAngleY={20} scale={1.1}>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5, rotate: 10 }}
-                whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                transition={{ duration: 1, type: "spring", damping: 12 }}
-                viewport={{ once: true }}
-              >
-                <img 
-                  src={myImg} 
-                  className="img-fluid" 
-                  alt="avatar" 
-                  style={{ 
-                    borderRadius: "50%", 
-                    border: "4px solid var(--primary-glow)", 
-                    padding: "10px",
-                    boxShadow: "0 0 40px var(--primary-glow)"
-                  }}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              viewport={{ once: true }}
+            >
+              <div className="home-image-wrapper">
+                <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid home-hero-img"
                 />
-              </motion.div>
-            </Tilt>
+                <div className="home-image-glow"></div>
+              </div>
+            </motion.div>
           </Col>
         </Row>
         <Row>

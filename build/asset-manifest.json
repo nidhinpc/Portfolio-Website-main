@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website-main/static/css/main.ee617b1e.css",
-    "main.js": "/Portfolio-Website-main/static/js/main.87301d46.js",
+    "main.css": "/Portfolio-Website-main/static/css/main.53c5da00.css",
+    "main.js": "/Portfolio-Website-main/static/js/main.7137020e.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js",
     "static/media/Pantho.png": "/Portfolio-Website-main/static/media/Pantho.2709c033794e34fa536f.png",
     "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.17705088658d6ca8e69e.png",
@@ -13,15 +13,15 @@
     "static/media/islamicapp.png": "/Portfolio-Website-main/static/media/islamicapp.b215856b294343347a8e.png",
     "static/media/corevant-exp-cert.pdf": "/Portfolio-Website-main/static/media/corevant-exp-cert.8dc80c5109ce23d3d348.pdf",
     "static/media/emotion.png": "/Portfolio-Website-main/static/media/emotion.eabfc16e7a146ab15778.png",
+    "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.992799d7fedf5c2c8c35.pdf",
     "static/media/rootments-exp-cert.pdf": "/Portfolio-Website-main/static/media/rootments-exp-cert.7024931bc4620d4354c1.pdf",
-    "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.a3b182fd21347595c18c.pdf",
     "index.html": "/Portfolio-Website-main/index.html",
-    "main.ee617b1e.css.map": "/Portfolio-Website-main/static/css/main.ee617b1e.css.map",
-    "main.87301d46.js.map": "/Portfolio-Website-main/static/js/main.87301d46.js.map",
+    "main.53c5da00.css.map": "/Portfolio-Website-main/static/css/main.53c5da00.css.map",
+    "main.7137020e.js.map": "/Portfolio-Website-main/static/js/main.7137020e.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee617b1e.css",
-    "static/js/main.87301d46.js"
+    "static/css/main.53c5da00.css",
+    "static/js/main.7137020e.js"
   ]
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../../assets/home-main.png";
+import myImg from "../../../assets/avatar.png";
+import Tilt from "react-parallax-tilt";
 import Particle from "../../../components/common/Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -8,10 +9,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function Home() {
-  const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 100]);
-  const y2 = useTransform(scrollY, [0, 500], [0, -100]);
-
   return (
     <section>
       <Container fluid className="home-section" id="home" style={{ overflow: "hidden" }}>
@@ -24,36 +21,67 @@ function Home() {
                 animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               >
+                {/* Premium Introduction */}
                 <motion.h1 
-                  style={{ paddingBottom: 15 }} 
-                  className="heading"
+                  className="heading-name"
+                  style={{ 
+                    fontSize: "3.5rem", 
+                    fontWeight: "800", 
+                    letterSpacing: "-1px", 
+                    marginBottom: "20px" 
+                  }}
                   whileHover={{ scale: 1.02 }}
                 >
-                  Hi There!{" "}
-                  <motion.span 
-                    className="wave" 
-                    role="img" 
-                    aria-labelledby="wave"
-                    animate={{ rotate: [0, 14, -8, 14, -4, 10, 0] }}
-                    transition={{ repeat: Infinity, duration: 2.5 }}
-                  >
-                    👋🏻
-                  </motion.span>
+                  <span style={{ color: "white", opacity: 0.9 }}>I am </span>
+                  <strong className="purple" style={{ textShadow: "0 0 20px rgba(192, 132, 252, 0.4)" }}>
+                    Nidhin PC
+                  </strong>
                 </motion.h1>
-
-                <h1 className="heading-name">
-                  I'M
-                  <strong className="main-name"> NIDHIN PC</strong>
-                </h1>
 
                 <motion.div 
                   className="type-wrapper"
-                  style={{ padding: 50, textAlign: "left" }}
+                  style={{ padding: "20px 0 20px 50px", textAlign: "left" }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.8 }}
                 >
                   <Type />
+                </motion.div>
+
+                <motion.p
+                  style={{ 
+                    paddingLeft: "50px", 
+                    color: "rgba(255, 255, 255, 0.7)", 
+                    fontSize: "1.2rem", 
+                    lineHeight: "1.6",
+                    maxWidth: "600px",
+                    marginBottom: "30px"
+                  }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8, duration: 0.8 }}
+                >
+                  Passionate Junior Mobile Application Developer specializing in 
+                  <span className="purple"> pixel-perfect</span> and 
+                  <span className="purple"> high-performance</span> cross-platform mobile solutions.
+                </motion.p>
+
+                {/* Hero Stats/Badges */}
+                <motion.div
+                  style={{ paddingLeft: "50px", display: "flex", gap: "25px", marginBottom: "40px", flexWrap: "wrap" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 0.8 }}
+                >
+                  <div className="hero-stat">
+                    <span className="purple fw-bold" style={{ fontSize: "1.4rem" }}>2024</span>
+                    <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)", margin: 0, textTransform: "uppercase", letterSpacing: "1px" }}>Starting Year</p>
+                  </div>
+                  <div style={{ width: "1px", background: "rgba(192, 132, 252, 0.3)", height: "40px" }} className="d-none d-sm-block"></div>
+                  <div className="hero-stat">
+                    <span className="purple fw-bold" style={{ fontSize: "1.4rem" }}>Dubai, UAE</span>
+                    <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)", margin: 0, textTransform: "uppercase", letterSpacing: "1px" }}>Location</p>
+                  </div>
                 </motion.div>
 
                 <motion.div
@@ -89,19 +117,27 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <motion.div
-                style={{ y: y1 }}
-                initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
-                animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <img
-                  src={homeLogo}
-                  alt="home pic"
-                  className="img-fluid"
-                  style={{ maxHeight: "550px", filter: "drop-shadow(0 0 30px var(--primary-glow))" }}
-                />
-              </motion.div>
+              <Tilt tiltMaxAngleX={20} tiltMaxAngleY={20} scale={1.1}>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.5, rotate: 10 }}
+                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                  transition={{ duration: 1, type: "spring", damping: 12 }}
+                >
+                  <img 
+                    src={myImg} 
+                    className="img-fluid" 
+                    alt="avatar" 
+                    style={{ 
+                      borderRadius: "50%", 
+                      border: "4px solid var(--primary-glow)", 
+                      padding: "10px",
+                      boxShadow: "0 0 40px var(--primary-glow)",
+                      maxWidth: "500px",
+                      width: "100%"
+                    }}
+                  />
+                </motion.div>
+              </Tilt>
             </Col>
           </Row>
         </Container>

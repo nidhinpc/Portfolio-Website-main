@@ -15,7 +15,7 @@ import {
   Mail
 } from "lucide-react";
 
-function NavBar() {
+function NavBar({ load }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -38,17 +38,9 @@ function NavBar() {
   return (
     <>
       <motion.div
-        className="scroll-progress"
+        className={`page-progress-bar ${load ? "linear-loader" : "scroll-progress"}`}
         style={{
-          scaleX,
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          height: "4px",
-          background: "linear-gradient(90deg, var(--primary), var(--secondary), var(--accent))",
-          transformOrigin: "0%",
-          zIndex: 10001
+          scaleX: load ? 1 : scaleX,
         }}
       />
       <Navbar
@@ -59,13 +51,26 @@ function NavBar() {
       >
         <Container>
           <Navbar.Brand as={Link} to="/" className="d-flex">
-            <motion.strong 
-              className="main-name" 
-              style={{ fontSize: "1.8rem" }}
-              whileHover={{ scale: 1.1 }}
-            >
-              NIDHIN.
-            </motion.strong>
+            <Link to="/" className="navbar-brand-container">
+              {/* Spinning orbital ring, exactly like the preloader but scaled down */}
+              <div className="nav-orbital-container">
+                <motion.div
+                  className="nav-ring nav-ring-outer"
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                />
+                <motion.div
+                  className="nav-ring nav-ring-inner"
+                  animate={{ rotate: -360 }}
+                  transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
+                />
+
+                {/* Initials */}
+                <div className="nav-initials">
+                  NP
+                </div>
+              </div>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"

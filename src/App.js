@@ -108,7 +108,7 @@ function App() {
         }}
       >
         <CustomCursor />
-        <Navbar />
+        <Navbar load={load} />
         <ScrollToTop />
         <main style={{ minHeight: "90vh", background: "transparent" }}>
           <AnimatedRoutes />
