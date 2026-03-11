@@ -72,6 +72,7 @@ body::before {
   height: 100% !important;
   z-index: 5 !important; /* Above body::before, below content */
   opacity: 0.5;
+  pointer-events: none !important; /* Decorative only — don't block clicks */
   background: transparent !important;
 }
 

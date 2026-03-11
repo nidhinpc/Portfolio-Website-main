@@ -39,16 +39,127 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: var(--bg-dark);
+  background: radial-gradient(ellipse at center, #0a0520 0%, #030014 70%);
 }
 
 #preloader-none {
   opacity: 0;
+  pointer-events: none;
 }
 
 #no-scroll {
   overflow: hidden;
   height: 100vh;
+}
+
+/* Orbital rings container */
+.preloader-center {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.preloader-ring-outer {
+  width: 160px;
+  height: 160px;
+  border-top-color: #c084fc;
+  border-right-color: rgba(192, 132, 252, 0.3);
+  border-bottom-color: transparent;
+  border-left-color: rgba(192, 132, 252, 0.1);
+  filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.5));
+}
+
+.preloader-ring-inner {
+  width: 120px;
+  height: 120px;
+  border-top-color: transparent;
+  border-right-color: rgba(99, 102, 241, 0.1);
+  border-bottom-color: #6366f1;
+  border-left-color: rgba(99, 102, 241, 0.3);
+  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.5));
+}
+
+/* Gradient initials */
+.preloader-initials {
+  font-size: 2.8em;
+  font-weight: 800;
+  font-family: "Outfit", sans-serif;
+  background: linear-gradient(135deg, #c084fc, #6366f1, #f472b6);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  z-index: 2;
+  letter-spacing: 4px;
+}
+
+/* Name text below */
+.preloader-name {
+  margin-top: 28px;
+  font-size: 0.95em;
+  font-weight: 500;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Progress bar */
+.preloader-progress-track {
+  margin-top: 32px;
+  width: 160px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.preloader-progress-bar {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #c084fc, #6366f1, #f472b6);
+  box-shadow: 0 0 12px rgba(192, 132, 252, 0.5);
+}
+
+/* Floating ambient orbs */
+.preloader-orbs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.preloader-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.preloader-orb-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #c084fc 0%, transparent 70%);
+  top: 15%;
+  left: 10%;
+}
+
+.preloader-orb-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #6366f1 0%, transparent 70%);
+  bottom: 15%;
+  right: 10%;
 }
 
 /* --------- */
@@ -740,4 +851,149 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Resume Tabs */
+/* --------- */
+
+.resume-tabs {
+  display: flex !important;
+  gap: 12px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(200, 137, 230, 0.25) !important;
+  border-radius: 50px !important;
+  padding: 6px !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.resume-tab-link {
+  color: rgba(255, 255, 255, 0.6) !important;
+  border-radius: 50px !important;
+  padding: 10px 28px !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  background: transparent !important;
+  white-space: nowrap !important;
+}
+
+.resume-tab-link:hover {
+  color: #ffffff !important;
+  background: rgba(200, 137, 230, 0.15) !important;
+}
+
+.resume-tab-link.active {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #623686, #9b5de5) !important;
+  box-shadow: 0 4px 20px rgba(155, 93, 229, 0.4) !important;
+}
+
+/* --------- */
+/* Certificate Cards */
+/* --------- */
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(200, 137, 230, 0.2) !important;
+  border-radius: 24px !important;
+  padding: 40px 30px !important;
+  margin-bottom: 20px !important;
+  backdrop-filter: blur(12px) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.cert-card:hover {
+  border-color: rgba(200, 137, 230, 0.5) !important;
+}
+
+.cert-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  margin-bottom: 28px !important;
+  text-align: left !important;
+}
+
+.cert-icon {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, #623686, #9b5de5) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 8px 20px rgba(155, 93, 229, 0.35) !important;
+}
+
+.cert-company {
+  color: #ffffff !important;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.cert-title-text {
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-size: 0.95em !important;
+  margin: 0 !important;
+}
+
+.cert-divider {
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(200, 137, 230, 0.3), transparent) !important;
+  margin: 40px 0 !important;
+}
+
+@media (max-width: 767px) {
+  .resume-tabs {
+    flex-direction: column !important;
+    border-radius: 16px !important;
+  }
+  .resume-tab-link {
+    text-align: center !important;
+  }
+  .cert-card {
+    padding: 24px 16px !important;
+  }
+  .cert-company {
+    font-size: 1.2em !important;
+  }
+}
+
+/* --------- */
+/* PDF Skeleton Loader */
+/* --------- */
+
+@keyframes shimmer {
+  0%   { background-position: -800px 0; }
+  100% { background-position:  800px 0; }
+}
+
+.pdf-skeleton {
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(200, 137, 230, 0.10) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
+.pdf-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border: 1px dashed rgba(200, 137, 230, 0.3);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1em;
+  margin: 20px auto;
+  max-width: 500px;
 }
