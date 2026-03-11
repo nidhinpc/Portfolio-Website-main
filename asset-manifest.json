@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-main/static/css/main.baf50495.css",
-    "main.js": "/Portfolio-Website-main/static/js/main.052071f8.js",
+    "main.js": "/Portfolio-Website-main/static/js/main.98228374.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js",
-    "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.c17b3c166ec3f5376386.png",
     "static/media/Pantho.png": "/Portfolio-Website-main/static/media/Pantho.2709c033794e34fa536f.png",
+    "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.17705088658d6ca8e69e.png",
     "static/media/movie-app.png": "/Portfolio-Website-main/static/media/movie-app.8c74a7c343e8ace9b7cc.png",
     "static/media/bankingapp-1.png": "/Portfolio-Website-main/static/media/bankingapp-1.ed3d815e6810f0edc233.png",
+    "static/media/about.png": "/Portfolio-Website-main/static/media/about.03ee1ce3999b9008628e.png",
+    "static/media/home-main.png": "/Portfolio-Website-main/static/media/home-main.f83e1908c370b20d7299.png",
     "static/media/ecommerce.png": "/Portfolio-Website-main/static/media/ecommerce.1ea488f3a334b63903fe.png",
     "static/media/islamicapp.png": "/Portfolio-Website-main/static/media/islamicapp.b215856b294343347a8e.png",
     "static/media/emotion.png": "/Portfolio-Website-main/static/media/emotion.eabfc16e7a146ab15778.png",
-    "static/media/home-main.svg": "/Portfolio-Website-main/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
-    "static/media/about.png": "/Portfolio-Website-main/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.a3b182fd21347595c18c.pdf",
     "index.html": "/Portfolio-Website-main/index.html",
     "main.baf50495.css.map": "/Portfolio-Website-main/static/css/main.baf50495.css.map",
-    "main.052071f8.js.map": "/Portfolio-Website-main/static/js/main.052071f8.js.map",
+    "main.98228374.js.map": "/Portfolio-Website-main/static/js/main.98228374.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baf50495.css",
-    "static/js/main.052071f8.js"
+    "static/js/main.98228374.js"
   ]
 }
