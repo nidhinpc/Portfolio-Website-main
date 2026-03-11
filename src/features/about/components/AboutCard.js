@@ -9,8 +9,8 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi, I'm <span className="purple">Nidhin PC</span> — a dedicated
-            freelance <span className="purple">Flutter Developer</span> based in{" "}
-            <span className="purple">Kerala, India</span>.
+            <span className="purple"> Mobile Application Developer</span> based in{" "}
+            <span className="purple">Dubai, UAE</span>.
             <br />
             <br />
             I help businesses, startups, and individuals bring their ideas to

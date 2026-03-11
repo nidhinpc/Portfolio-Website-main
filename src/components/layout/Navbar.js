@@ -11,7 +11,8 @@ import {
   Code, 
   FileText, 
   Github, 
-  Star 
+  Star,
+  Mail
 } from "lucide-react";
 
 function NavBar() {
@@ -83,11 +84,11 @@ function NavBar() {
                 { to: "/about", icon: <User size={18} />, label: "About" },
                 { to: "/project", icon: <Code size={18} />, label: "Projects" },
                 { to: "/resume", icon: <FileText size={18} />, label: "Resume" },
+                { href: "mailto:nidhinpc66666@gmail.com", icon: <Mail size={18} />, label: "Email" },
               ].map((item, index) => (
                 <Nav.Item key={index}>
                   <Nav.Link 
-                    as={Link} 
-                    to={item.to} 
+                    {...(item.href ? { href: item.href } : { as: Link, to: item.to })}
                     onClick={() => updateExpanded(false)}
                     style={{ position: "relative" }}
                   >

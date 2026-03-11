@@ -5,6 +5,7 @@ import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiFillInstagram,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -97,6 +98,7 @@ function Home2() {
                   { icon: <AiFillGithub />, link: "https://github.com/nidhinpc" },
                   { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/nidhinpc316/" },
                   { icon: <AiFillInstagram />, link: "https://www.instagram.com/_nidhin_p_c_/" },
+                  { icon: <AiOutlineMail />, link: "mailto:nidhinpc66666@gmail.com" },
                 ].map((social, index) => (
                   <motion.li 
                     key={index} 

@@ -1,0 +1,53 @@
+NIDHIN PERUMBADA CHANDRAN
+ Mobile Application Developer
+ Dubai,UAE | +91 9846871894 | nidhinpc66666@gmail.com | Portfolio: https://nidhinpc.github.io/Portfolio-Website-main
+LinkedIn: https://www.linkedin.com/in/nidhinpc316  |  GitHub: https://github.com/nidhinpc
+TECHNICAL SKILLS
+  
+PROFESSIONAL EXPERIENCE
+ Languages& Frameworks:
+State Management: 
+Architecture:
+Database & APIs: 
+Integrations:
+CI/CD & Deployment: 
+Tools: 
+Flutter Developer Intern
+Rootments Enterprises LLP – Edapally, Ernakulam
+December 2024 – April 2025Junior Flutter Developer 
+Corevant Platforms Pvt. Ltd. – Thodupuzha, Kerala
+August 2025 – March 2026Flutter, Dart, Android, iOS
+GetX, Provider, Riverpod
+CleanArchitecture, MVC
+Firestore, REST APIs, Swagger, Postman
+Firebase,Branch.io, AppsFlyer, Stripe, Google Maps, Bugsnag, OpenStreet, Payment Gateways
+Shorebird, Codemagic, App Store Connect, Google Play Console
+Git, GitHub, Android Studio, VS Code1+ years of experience as a Mobile Application Devleoper building high-performance, scalable mobile applications
+using Flutter and Dart. Strong in clean architecture, state management, CI/CD automation, secure API integrations, and
+performance optimization. Proven track record delivering crash-free, production-grade apps with fast load times and
+efficient deployments. Experienced in collaborating with cross-functional teams, building real-time systems, and
+publishing apps to Google Play. Based in Dubai and open to full-time opportunities.
+Developed and published Vitara Gold, a Gold SIP investment mobile application on Google Play Store.
+Integrated secure REST APIs with encrypted request and response handling for financial transactions.
+Implemented PhonePe payment gateway for seamless payment processing.
+Managed development and production environments while optimizing app performance.
+Integrated Push Notification, AppsFlyer, Branch.io, and deep-linking for enhanced tracking and user engagement.
+Maintained clean, modular code architecture (MVC, Clean Architecture), reducing code duplication and improving
+development speed. 
+Deployed apps to Play Store and App Store with 100% approval on every release.
+Developed a wedding dress rental management system with inventory and booking modules.
+Implemented tag-number search functionality to verify dress availability by date.
+Integrated Flutter frontend with MERN backend using REST APIs.
+Collaborated with UI/UX designers to improve application usability and performance.
+PROJECT HIGHLIGHT
+ Service Booking Application
+Developed a role-based service booking platform with Admin, User, and Worker dashboards.
+Implemented Firebase Authentication and Firestore for secure user management.
+Migrated image storage to Cloudinary for scalable media management.
+EDUCATION
+ Bachelor of Computer Applications (BCA)
+ Jawaharlal Nehru Institute of Arts and Science(Mahatma Gandhi University) 
+November 2021 – May 2024
+ Flutter Development Training
+ Luminar Technolab, Kochi
+June 2024 – November 2024PROFESSIONAL SUMMARY

@@ -34,6 +34,12 @@ function Projects() {
 
   const projectData = [
     {
+      imgPath: pantho,
+      title: "ProFix - Home Services Booking",
+      description: "A comprehensive on-demand service booking platform designed to connect users with skilled professionals. Effortlessly schedule AC mechanics, residential plumbing, electrical repairs, and other home maintenance tasks globally.",
+      ghLink: "https://github.com/nidhinpc"
+    },
+    {
       imgPath: islamicapp,
       title: "Quran Mp3 & Qibla Finder",
       description: "A comprehensive Islamic utility app featuring high-quality audio recitations, accurate prayer timings, and a precise Qibla compass. Built with production-grade Flutter patterns.",
