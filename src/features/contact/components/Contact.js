@@ -148,51 +148,63 @@ function Contact() {
               className="v3-form-card"
             >
               <Form ref={form} onSubmit={sendEmail} className="v3-contact-form">
-                <Row>
-                  <Col md={12}>
-                    <div className="v3-input-wrapper">
-                      <label>Your Name</label>
-                      <Form.Control 
-                        type="text" 
-                        name="user_name" 
-                        placeholder="What's your name?" 
-                        required 
-                      />
-                    </div>
+                {/* Hidden time field for the template */}
+                <input type="hidden" name="time" value={new Date().toLocaleString()} />
+                
+                <Row className="v3-form-group">
+                  <Col md={3} className="v3-label-col">
+                    <label>Your Name</label>
                   </Col>
-                  <Col md={12}>
-                    <div className="v3-input-wrapper">
-                      <label>Your Email</label>
-                      <Form.Control 
-                        type="email" 
-                        name="user_email" 
-                        placeholder="Where can I reach you?" 
-                        required 
-                      />
-                    </div>
+                  <Col md={9}>
+                    <Form.Control 
+                      type="text" 
+                      name="name" 
+                      placeholder="Enter your name" 
+                      required 
+                    />
                   </Col>
-                  <Col md={12}>
-                    <div className="v3-input-wrapper">
-                      <label>Subject</label>
-                      <Form.Control 
-                        type="text" 
-                        name="subject" 
-                        placeholder="How can I help?" 
-                        required 
-                      />
-                    </div>
+                </Row>
+
+                <Row className="v3-form-group">
+                  <Col md={3} className="v3-label-col">
+                    <label>Your Email</label>
                   </Col>
-                  <Col md={12}>
-                    <div className="v3-input-wrapper">
-                      <label>Message</label>
-                      <Form.Control 
-                        as="textarea" 
-                        rows={4} 
-                        name="message" 
-                        placeholder="Tell me about your project..." 
-                        required 
-                      />
-                    </div>
+                  <Col md={9}>
+                    <Form.Control 
+                      type="email" 
+                      name="user_email" 
+                      placeholder="Enter your email" 
+                      required 
+                    />
+                  </Col>
+                </Row>
+
+                <Row className="v3-form-group">
+                  <Col md={3} className="v3-label-col">
+                    <label>Subject</label>
+                  </Col>
+                  <Col md={9}>
+                    <Form.Control 
+                      type="text" 
+                      name="subject" 
+                      placeholder="What is this about?" 
+                      required 
+                    />
+                  </Col>
+                </Row>
+
+                <Row className="v3-form-group">
+                  <Col md={3} className="v3-label-col">
+                    <label>Message</label>
+                  </Col>
+                  <Col md={9}>
+                    <Form.Control 
+                      as="textarea" 
+                      rows={5} 
+                      name="message" 
+                      placeholder="Tell me about your project..." 
+                      required 
+                    />
                   </Col>
                 </Row>
 
