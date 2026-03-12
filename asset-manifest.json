@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website-main/static/css/main.26968585.css",
-    "main.js": "/Portfolio-Website-main/static/js/main.d853297a.js",
+    "main.css": "/Portfolio-Website-main/static/css/main.f0471a78.css",
+    "main.js": "/Portfolio-Website-main/static/js/main.7cdfa313.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js",
     "static/media/Pantho.png": "/Portfolio-Website-main/static/media/Pantho.2709c033794e34fa536f.png",
     "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.17705088658d6ca8e69e.png",
@@ -16,12 +16,12 @@
     "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.992799d7fedf5c2c8c35.pdf",
     "static/media/rootments-exp-cert.pdf": "/Portfolio-Website-main/static/media/rootments-exp-cert.7024931bc4620d4354c1.pdf",
     "index.html": "/Portfolio-Website-main/index.html",
-    "main.26968585.css.map": "/Portfolio-Website-main/static/css/main.26968585.css.map",
-    "main.d853297a.js.map": "/Portfolio-Website-main/static/js/main.d853297a.js.map",
+    "main.f0471a78.css.map": "/Portfolio-Website-main/static/css/main.f0471a78.css.map",
+    "main.7cdfa313.js.map": "/Portfolio-Website-main/static/js/main.7cdfa313.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26968585.css",
-    "static/js/main.d853297a.js"
+    "static/css/main.f0471a78.css",
+    "static/js/main.7cdfa313.js"
   ]
 }
