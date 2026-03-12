@@ -1,85 +1,101 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { 
+  FiCode, 
+  FiZap, 
+  FiLayers, 
+  FiServer 
+} from "react-icons/fi";
+import { motion } from "framer-motion";
 
 function AboutCard() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+
+  const coreSkills = [
+    { label: "Advanced Flutter & Dart", icon: <FiZap /> },
+    { label: "Clean Architecture", icon: <FiLayers /> },
+    { label: "CI/CD & Deployment", icon: <FiServer /> },
+    { label: "REST & Financial API", icon: <FiCode /> },
+  ];
+
   return (
-    <Card className="quote-card-view glass-card" style={{ padding: "20px", border: "none" }}>
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi, I'm <span className="purple">Nidhin PC</span> — a dedicated
-            <span className="purple"> Mobile Application Developer</span> based in{" "}
-            <span className="purple">Dubai, UAE</span>.
-            <br />
-            <br />
-            I help businesses, startups, and individuals bring their ideas to
-            life through clean, scalable, and high-performance mobile
-            applications.
-            <br />
-            <br />
-            With hands-on experience across both iOS and Android platforms, I
-            specialize in delivering modern, user-friendly solutions that are
-            built to perform and grow. From launching apps from scratch to
-            improving existing ones — I'm here to make your project a success.
-            <br />
-            <br />
-            <strong>Here’s what I offer:</strong>
-          </p>
+    <Card className="quote-card-view glass-card" style={{ border: "none" }}>
+      <Card.Body style={{ padding: "40px 30px" }}>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {/* Intro Section */}
+          <motion.div variants={itemVariants} style={{ marginBottom: "35px" }}>
+            <h2 style={{ fontSize: "1.8em", fontWeight: "800", marginBottom: "15px" }}>
+              Crafting Digital <span className="purple">Excellence</span>
+            </h2>
+            <p style={{ textAlign: "justify", color: "rgba(255, 255, 255, 0.8)", fontSize: "1.05rem", lineHeight: "1.7" }}>
+              I am a dedicated <span className="purple">Mobile Application Developer</span> specializing in 
+              high-performance solutions. With a focus on <span className="purple">clean code</span> and 
+              <span className="purple">intuitive UX</span>, I transform complex requirements into 
+              seamless mobile experiences.
+            </p>
+          </motion.div>
 
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Cross-platform mobile apps using Flutter
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Advanced state management (Provider, GetX,
-              Riverpod)
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Firebase, Supabase, Google Maps & More...
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Custom UI/UX, smooth animations & reusable
-              widgets
-            </li>
-          </ul>
 
-          <p style={{ textAlign: "justify" }}>
-            I hold a BCA degree from{" "}
-            <span className="purple">(Mahatma Gandhi University)</span>, and I’m
-            constantly exploring the latest in mobile technologies to keep my
-            work ahead of the curve.
-            <br />
-            <br />
-            If you're looking for a reliable developer who genuinely cares about
-            quality and collaboration — let’s build something amazing together!
-            <br />
-            <br />
-            <strong>When I’m not coding, I enjoy:</strong>
-          </p>
+          {/* Skills Section */}
+          <motion.div variants={itemVariants} style={{ marginTop: "40px" }}>
+            <h3 style={{ fontSize: "1.3em", fontWeight: "700", marginBottom: "20px" }}>
+              Core <span className="purple">Competencies</span>
+            </h3>
+            <div className="about-skill-grid">
+              {coreSkills.map((skill, index) => (
+                <div key={index} className="skill-tag">
+                  {skill.icon}
+                  <span>{skill.label}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
 
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Learning New Skills
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Traveling & Exploring Emerging Tech
-            </li>
-          </ul>
+          {/* Achievement Highlight */}
+          <motion.div variants={itemVariants} style={{ 
+            marginTop: "40px", 
+            padding: "20px", 
+            background: "rgba(192, 132, 252, 0.05)", 
+            borderRadius: "15px",
+            borderLeft: "4px solid var(--primary)"
+          }}>
+            <p style={{ margin: 0, fontStyle: "italic", color: "rgba(255, 255, 255, 0.9)" }}>
+              Successfully published <span className="purple">Vitara Gold</span> and orchestrated dozens of 
+              production releases with clinical precision.
+            </p>
+          </motion.div>
 
-          <p style={{ color: "var(--primary-color)", fontStyle: "italic", marginTop: "20px" }}>
-            "Strive to build things that make a difference — both in code and in
-            impact."
-          </p>
-          <footer className="blockquote-footer">Nidhin</footer>
-        </blockquote>
+          {/* Footer Quote */}
+          <motion.div variants={itemVariants} style={{ marginTop: "45px", textAlign: "center" }}>
+            <p style={{ color: "var(--primary)", fontStyle: "italic", fontSize: "1.1em", marginBottom: "8px" }}>
+              "Efficiency in code, impact in reality."
+            </p>
+            <footer className="blockquote-footer" style={{ border: "none" }}>Nidhin PC</footer>
+          </motion.div>
+        </motion.div>
       </Card.Body>
     </Card>
-
   );
 }
+
 
 export default AboutCard;

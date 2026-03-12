@@ -4,7 +4,6 @@ import homeLogo from "../../../assets/home-main.png";
 import {
   AiFillGithub,
   AiFillInstagram,
-  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -39,22 +38,16 @@ function Home2() {
                 
                 {/* Quick Facts Section */}
                 <Row className="quick-facts mt-5 mb-4 g-4">
-                  <Col sm={4}>
+                  <Col sm={6}>
                     <div className="fact-glass-card p-3 text-center">
                       <h3 className="purple fw-bold mb-1">1+</h3>
                       <p className="mb-0 text-sm">Years Experience</p>
                     </div>
                   </Col>
-                  <Col sm={4}>
+                  <Col sm={6}>
                     <div className="fact-glass-card p-3 text-center">
                       <h3 className="purple fw-bold mb-1">10+</h3>
                       <p className="mb-0 text-sm">Projects Delivered</p>
-                    </div>
-                  </Col>
-                  <Col sm={4}>
-                    <div className="fact-glass-card p-3 text-center">
-                      <h3 className="purple fw-bold mb-1">100%</h3>
-                      <p className="mb-0 text-sm">Store Approval Rate</p>
                     </div>
                   </Col>
                 </Row>
@@ -96,7 +89,6 @@ function Home2() {
                   { icon: <AiFillGithub />, link: "https://github.com/nidhinpc" },
                   { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/nidhinpc316/" },
                   { icon: <AiFillInstagram />, link: "https://www.instagram.com/_nidhin_p_c_/" },
-                  { icon: <AiOutlineMail />, link: "mailto:nidhinpc66666@gmail.com" },
                 ].map((social, index) => (
                   <motion.li 
                     key={index} 

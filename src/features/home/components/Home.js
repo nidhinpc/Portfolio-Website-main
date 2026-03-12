@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import Particle from "../../../components/common/Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function Home() {

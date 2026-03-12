@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://nidhinpc.github.io/Portfolio-Website-main",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@react-pdf/renderer": "^2.2.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
@@ -24,6 +25,7 @@
     "react-pdf": "^5.7.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-toastify": "^11.0.5",
     "react-tsparticles": "^1.42.2",
     "three": "^0.183.0",
     "tsparticles": "^3.3.0",

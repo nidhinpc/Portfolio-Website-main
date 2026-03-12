@@ -13,13 +13,14 @@
   border: 1px solid var(--glass-border) !important;
   border-radius: 24px !important;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
 }
 
 .glass-card:hover {
   border-color: var(--primary-glow) !important;
   transform: translateY(-8px) scale(1.01) !important;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
-              0 0 20px var(--primary-glow) !important;
+              0 0 25px var(--primary-glow) !important;
 }
 
 .fact-glass-card {
@@ -829,14 +830,16 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.15) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
+  border-radius: 16px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1) !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(5px) !important;
 }
 
 @media (max-width: 767px) {
@@ -846,9 +849,11 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  transform: translateY(-10px) scale(1.05) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1.7px solid rgba(197, 115, 230, 0.6) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+              0 0 15px rgba(192, 132, 252, 0.2) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -870,6 +875,90 @@ button:focus {
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+  }
+}
+
+/* --------- */
+/* New About Section Design Overhaul */
+/* --------- */
+
+.about-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.metric-card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(192, 132, 252, 0.15);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.metric-card:hover {
+  background: rgba(192, 132, 252, 0.05);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+}
+
+.metric-value {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(192, 132, 252, 0.3);
+  padding-left: 25px;
+}
+
+.skill-tag svg {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 991px) {
+  .about-metrics {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-skill-grid {
+    grid-template-columns: 1fr;
   }
 }
 /* --------- */
@@ -1159,4 +1248,216 @@ button:focus {
   font-size: 1em;
   margin: 20px auto;
   max-width: 500px;
+}
+
+/* --------- */
+/* Contact V3 - Architectural Design */
+/* --------- */
+
+.contact-v3-section {
+  position: relative;
+  padding-top: 150px !important;
+  padding-bottom: 100px !important;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.contact-v3-container {
+  position: relative;
+  z-index: 10;
+}
+
+.v3-tag {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.v3-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: white;
+}
+
+.purple-gradient-text {
+  background: linear-gradient(90deg, #c084fc, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.v3-info-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 100%;
+}
+
+.v3-info-item h6, .v3-social-section h6 {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.v3-email-link {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.v3-email-link:hover {
+  color: var(--primary);
+  transform: translateX(10px);
+}
+
+.v3-social-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.v3-social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.v3-social-link span {
+  font-weight: 500;
+}
+
+/* Form Card V3 */
+.v3-form-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 40px;
+  padding: 60px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+}
+
+.v3-input-wrapper {
+  margin-bottom: 30px;
+}
+
+.v3-input-wrapper label {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.v3-contact-form input,
+.v3-contact-form textarea {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0 !important;
+  padding: 15px 0 !important;
+  color: white !important;
+  font-size: 1.1rem !important;
+  transition: all 0.4s ease !important;
+}
+
+.v3-contact-form input:focus,
+.v3-contact-form textarea:focus {
+  border-bottom-color: var(--primary) !important;
+  box-shadow: none !important;
+  padding-left: 10px !important;
+}
+
+/* Submit Button V3 */
+.v3-submit-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 12px 12px 12px 35px;
+  border-radius: 100px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+.v3-submit-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.v3-submit-btn:hover .btn-circle {
+  background: white;
+  color: var(--primary);
+}
+
+/* Blobs */
+.v3-blob {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.v3-blob-1 {
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+  top: -100px;
+  right: -200px;
+  animation: blob-float 20s infinite alternate;
+}
+
+.v3-blob-2 {
+  background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+  bottom: -200px;
+  left: -200px;
+  animation: blob-float 15s infinite alternate-reverse;
+}
+
+@keyframes blob-float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, 100px) scale(1.1); }
+  100% { transform: translate(-30px, -50px) scale(0.9); }
+}
+
+@media (max-width: 991px) {
+  .v3-form-card {
+    padding: 40px 25px;
+    margin-top: 40px;
+  }
+  .v3-email-link {
+    font-size: 1.4rem;
+  }
 }

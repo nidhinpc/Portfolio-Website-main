@@ -11,33 +11,37 @@ import {
   SiGithub,
 } from "react-icons/si";
 
+import { motion } from "framer-motion";
+
 function Toolstack() {
+  const tools = [
+    <SiVisualstudiocode />,
+    <SiAndroidstudio />,
+    <SiPostman />,
+    <SiFigma />,
+    <SiGithub />,
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col> */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFigma />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col> */}
+      {tools.map((icon, index) => (
+        <Col xs={4} md={2} key={index} className="tech-icons">
+          <motion.div
+            initial={{ opacity: 0, translateY: 20 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ 
+              duration: 0.5, 
+              delay: index * 0.1,
+              type: "spring",
+              stiffness: 100,
+              damping: 10
+            }}
+            viewport={{ once: true }}
+          >
+            {icon}
+          </motion.div>
+        </Col>
+      ))}
     </Row>
   );
 }

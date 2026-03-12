@@ -89,7 +89,7 @@ function NavBar({ load }) {
                 { to: "/about", icon: <User size={18} />, label: "About" },
                 { to: "/project", icon: <Code size={18} />, label: "Projects" },
                 { to: "/resume", icon: <FileText size={18} />, label: "Resume" },
-                { href: "mailto:nidhinpc66666@gmail.com", icon: <Mail size={18} />, label: "Email" },
+                { to: "/contact", icon: <Mail size={18} />, label: "Contact" },
               ].map((item, index) => (
                 <Nav.Item key={index}>
                   <Nav.Link 
