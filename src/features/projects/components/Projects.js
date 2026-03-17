@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../../../components/common/Particle";
-import emotion from "../../../assets/Projects/emotion.png";
-import movie from "../../../assets/Projects/movie-app.png";
-import budgetmanagement from "../../../assets/Projects/bankingapp-1.png";
-import islamicapp from "../../../assets/Projects/islamicapp.png";
 import pantho from "../../../assets/Projects/Pantho.png";
-import ecommerce from "../../../assets/Projects/ecommerce.png";
+import vitara from "../../../assets/Projects/vitara-app.png";
+import rootments from "../../../assets/Projects/rootments-app.png";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -40,41 +37,16 @@ function Projects() {
       ghLink: "https://github.com/nidhinpc"
     },
     {
-      imgPath: islamicapp,
-      title: "Quran Mp3 & Qibla Finder",
-      description: "A comprehensive Islamic utility app featuring high-quality audio recitations, accurate prayer timings, and a precise Qibla compass. Built with production-grade Flutter patterns.",
-      ghLink: "https://github.com/codexahmar/Islamic-App",
-      demoLink: "https://play.google.com/store/apps/details?id=com.islamicazan.shzoneabbe"
+      imgPath: vitara,
+      title: "Vitara Gold :Savings into Gold",
+      description: "Vitara Gold is a digital platform that allows users to invest in 24K digital gold directly from their smartphone. The app provides a simple way to buy, hold, and manage gold without the need for physical storage.",
+      playstoreLink: "https://play.google.com/store/apps/details?id=platform.corevant.vitara_gold"
     },
     {
-      imgPath: budgetmanagement,
-      title: "True Wallet",
-      description: "Next-gen fintech application with real-time expense tracking, automated budgeting, and secure Firebase integration. Focused on clean architecture and data visualization.",
-      ghLink: "https://github.com/codexahmar/InternIntelligence_BankingApp"
-    },
-    {
-      imgPath: pantho,
-      title: "Pantho – Blood Donation",
-      description: "A community-driven platform connecting donors and recipients. Features real-time requests, donor tracking, and a highly responsive Flutter UI with GetX state management.",
-      ghLink: "https://github.com/codexahmar/Pantho-Freelance"
-    },
-    {
-      imgPath: ecommerce,
-      title: "ShopEase – E-commerce",
-      description: "A premium shopping experience with smooth transitions, Stripe payment integration, and dark mode support. Showcasing pixel-perfect UI/UX implementation.",
-      ghLink: "https://github.com/codexahmar/InternIntelligence_ecommerceApp"
-    },
-    {
-      imgPath: movie,
-      title: "CineTrack - Movie Hub",
-      description: "Discover trending cinema using TMDb API. Implements advanced filtering, personalized watchlists, and hero animations for a cinematic browsing feel.",
-      ghLink: "https://github.com/codexahmar/InternIntelligence_Movie-App"
-    },
-    {
-      imgPath: emotion,
-      title: "AI Mood Detector",
-      description: "Leveraging Google ML Kit for real-time facial analysis. This app detects emotions and head orientation with sub-second latency on mobile devices.",
-      ghLink: "https://github.com/codexahmar/InternIntelligence_FaceDetection"
+      imgPath: rootments,
+      title: "ROOTMENTS LEARN",
+      description: "ROOTMENTS LEARN is the ultimate app for ROOTMENTS employees to efficiently manage their profiles, update branch details, and submit lead information. This app is designed to streamline your workflow, ensuring you stay connected and productive.",
+      playstoreLink: "https://play.google.com/store/apps/details?id=com.rootments.rootments_sales"
     }
   ];
 
@@ -113,6 +85,7 @@ function Projects() {
                     description={project.description}
                     ghLink={project.ghLink}
                     demoLink={project.demoLink}
+                    playstoreLink={project.playstoreLink}
                   />
                 </motion.div>
               </Col>

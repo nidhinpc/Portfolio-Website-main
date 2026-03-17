@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaGooglePlay } from "react-icons/fa";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 function ProjectCards(props) {
@@ -61,17 +62,19 @@ function ProjectCards(props) {
             {props.description}
           </Card.Text>
           <div style={{ display: "flex", gap: "10px", marginTop: "20px" }}>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ flex: 1 }}>
-              <Button 
-                variant="primary" 
-                href={props.ghLink} 
-                target="_blank" 
-                className="fork-btn-inner"
-                style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
-              >
-                <BsGithub /> {props.isBlog ? "Blog" : "GitHub"}
-              </Button>
-            </motion.div>
+            {props.ghLink && (
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ flex: 1 }}>
+                <Button 
+                  variant="primary" 
+                  href={props.ghLink} 
+                  target="_blank" 
+                  className="fork-btn-inner"
+                  style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
+                >
+                  <BsGithub /> {props.isBlog ? "Blog" : "GitHub"}
+                </Button>
+              </motion.div>
+            )}
 
             {!props.isBlog && props.demoLink && (
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ flex: 1 }}>
@@ -83,6 +86,20 @@ function ProjectCards(props) {
                   style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--accent-gradient)" }}
                 >
                   <CgWebsite /> {"Demo"}
+                </Button>
+              </motion.div>
+            )}
+
+            {props.playstoreLink && (
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ flex: 1 }}>
+                <Button
+                  variant="primary"
+                  href={props.playstoreLink}
+                  target="_blank"
+                  className="fork-btn-inner"
+                  style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--accent-gradient)" }}
+                >
+                  <FaGooglePlay /> {"Play Store"}
                 </Button>
               </motion.div>
             )}
