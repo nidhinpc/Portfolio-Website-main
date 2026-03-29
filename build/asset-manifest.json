@@ -1,24 +1,27 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-main/static/css/main.f0471a78.css",
-    "main.js": "/Portfolio-Website-main/static/js/main.bcfefc34.js",
+    "main.js": "/Portfolio-Website-main/static/js/main.18a6859f.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js",
     "static/media/Pantho.png": "/Portfolio-Website-main/static/media/Pantho.2709c033794e34fa536f.png",
     "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.17705088658d6ca8e69e.png",
+    "static/media/university_certificate.pdf": "/Portfolio-Website-main/static/media/university_certificate.379cfbd6bbd72ed41acf.pdf",
     "static/media/about.png": "/Portfolio-Website-main/static/media/about.03ee1ce3999b9008628e.png",
     "static/media/home-main.png": "/Portfolio-Website-main/static/media/home-main.f83e1908c370b20d7299.png",
+    "static/media/android_flutter_app_development_certificate.pdf": "/Portfolio-Website-main/static/media/android_flutter_app_development_certificate.40602e058c7ae9229099.pdf",
     "static/media/vitara-app.png": "/Portfolio-Website-main/static/media/vitara-app.f4e698fe490b5cf8d523.png",
+    "static/media/NACTET.pdf": "/Portfolio-Website-main/static/media/NACTET.aa2ce35c060f620d47b1.pdf",
     "static/media/rootments-app.png": "/Portfolio-Website-main/static/media/rootments-app.35ec9f69d9858dd178bb.png",
     "static/media/corevant-exp-cert.pdf": "/Portfolio-Website-main/static/media/corevant-exp-cert.8dc80c5109ce23d3d348.pdf",
-    "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.992799d7fedf5c2c8c35.pdf",
+    "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.a88041dd5e937c6e4cde.pdf",
     "static/media/rootments-exp-cert.pdf": "/Portfolio-Website-main/static/media/rootments-exp-cert.7024931bc4620d4354c1.pdf",
     "index.html": "/Portfolio-Website-main/index.html",
     "main.f0471a78.css.map": "/Portfolio-Website-main/static/css/main.f0471a78.css.map",
-    "main.bcfefc34.js.map": "/Portfolio-Website-main/static/js/main.bcfefc34.js.map",
+    "main.18a6859f.js.map": "/Portfolio-Website-main/static/js/main.18a6859f.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0471a78.css",
-    "static/js/main.bcfefc34.js"
+    "static/js/main.18a6859f.js"
   ]
 }

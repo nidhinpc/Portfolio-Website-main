@@ -7,6 +7,7 @@ import Projects from "./features/projects/components/Projects";
 import Footer from "./components/layout/Footer";
 import Resume from "./features/resume/components/ResumeNew";
 import Contact from "./features/contact/components/Contact";
+import Certificates from "./features/certificates/components/Certificates";
 import {
   HashRouter as Router,
   Route,
@@ -78,6 +79,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
         <Route path="/project" element={<PageWrapper><Projects /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+        <Route path="/certificates" element={<PageWrapper><Certificates /></PageWrapper>} />
         <Route path="/resume" element={<PageWrapper><Resume /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="*" element={<Navigate to="/" />} />

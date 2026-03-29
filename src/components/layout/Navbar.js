@@ -12,7 +12,8 @@ import {
   FileText, 
   Github, 
   Star,
-  Mail
+  Mail,
+  Award
 } from "lucide-react";
 
 function NavBar({ load }) {
@@ -88,6 +89,7 @@ function NavBar({ load }) {
                 { to: "/", icon: <Home size={18} />, label: "Home" },
                 { to: "/about", icon: <User size={18} />, label: "About" },
                 { to: "/project", icon: <Code size={18} />, label: "Projects" },
+                { to: "/certificates", icon: <Award size={18} />, label: "Certificates" },
                 { to: "/resume", icon: <FileText size={18} />, label: "Resume" },
                 { to: "/contact", icon: <Mail size={18} />, label: "Contact" },
               ].map((item, index) => (
