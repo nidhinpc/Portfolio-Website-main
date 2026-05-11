@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../../../components/common/Particle";
-import pantho from "../../../assets/Projects/Pantho.png";
+import speedome from "../../../assets/Projects/speedome_app.png";
 import vitara from "../../../assets/Projects/vitara-app.png";
 import rootments from "../../../assets/Projects/rootments-app.png";
 import { motion } from "framer-motion";
@@ -31,8 +31,8 @@ function Projects() {
 
   const projectData = [
     {
-      imgPath: pantho,
-      title: "ProFix - Home Services Booking",
+      imgPath: speedome,
+      title: "Speedome - Home Services Booking",
       description: "A comprehensive on-demand service booking platform designed to connect users with skilled professionals. Effortlessly schedule AC mechanics, residential plumbing, electrical repairs, and other home maintenance tasks globally.",
       ghLink: "https://github.com/nidhinpc"
     },
