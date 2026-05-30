@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-main/static/css/main.f0471a78.css",
-    "main.js": "/Portfolio-Website-main/static/js/main.be07a906.js",
+    "main.js": "/Portfolio-Website-main/static/js/main.d831581e.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js",
     "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.17705088658d6ca8e69e.png",
     "static/media/university_certificate.pdf": "/Portfolio-Website-main/static/media/university_certificate.379cfbd6bbd72ed41acf.pdf",
@@ -13,15 +13,15 @@
     "static/media/rootments-app.png": "/Portfolio-Website-main/static/media/rootments-app.35ec9f69d9858dd178bb.png",
     "static/media/speedome_app.png": "/Portfolio-Website-main/static/media/speedome_app.e124d51384b7caf6b504.png",
     "static/media/corevant-exp-cert.pdf": "/Portfolio-Website-main/static/media/corevant-exp-cert.8dc80c5109ce23d3d348.pdf",
-    "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.c240be47b012d13e30de.pdf",
+    "static/media/NidhinPcCV.pdf": "/Portfolio-Website-main/static/media/NidhinPcCV.9e3eb6046038f4b10867.pdf",
     "static/media/rootments-exp-cert.pdf": "/Portfolio-Website-main/static/media/rootments-exp-cert.7024931bc4620d4354c1.pdf",
     "index.html": "/Portfolio-Website-main/index.html",
     "main.f0471a78.css.map": "/Portfolio-Website-main/static/css/main.f0471a78.css.map",
-    "main.be07a906.js.map": "/Portfolio-Website-main/static/js/main.be07a906.js.map",
+    "main.d831581e.js.map": "/Portfolio-Website-main/static/js/main.d831581e.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0471a78.css",
-    "static/js/main.be07a906.js"
+    "static/js/main.d831581e.js"
   ]
 }
