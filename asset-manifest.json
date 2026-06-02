@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-main/static/css/main.f0471a78.css",
-    "main.js": "/Portfolio-Website-main/static/js/main.e78571d6.js",
+    "main.js": "/Portfolio-Website-main/static/js/main.b44efe8a.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js",
     "static/media/avatar.png": "/Portfolio-Website-main/static/media/avatar.17705088658d6ca8e69e.png",
     "static/media/university_certificate.pdf": "/Portfolio-Website-main/static/media/university_certificate.379cfbd6bbd72ed41acf.pdf",
@@ -17,11 +17,11 @@
     "static/media/rootments-exp-cert.pdf": "/Portfolio-Website-main/static/media/rootments-exp-cert.7024931bc4620d4354c1.pdf",
     "index.html": "/Portfolio-Website-main/index.html",
     "main.f0471a78.css.map": "/Portfolio-Website-main/static/css/main.f0471a78.css.map",
-    "main.e78571d6.js.map": "/Portfolio-Website-main/static/js/main.e78571d6.js.map",
+    "main.b44efe8a.js.map": "/Portfolio-Website-main/static/js/main.b44efe8a.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio-Website-main/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0471a78.css",
-    "static/js/main.e78571d6.js"
+    "static/js/main.b44efe8a.js"
   ]
 }
