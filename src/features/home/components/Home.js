@@ -79,7 +79,7 @@ function Home() {
                   </div>
                   <div style={{ width: "1px", background: "rgba(192, 132, 252, 0.3)", height: "40px" }} className="d-none d-sm-block"></div>
                   <div className="hero-stat">
-                    <span className="purple fw-bold" style={{ fontSize: "1.4rem" }}>Dubai, UAE</span>
+                    <span className="purple fw-bold" style={{ fontSize: "1.4rem" }}>Thrissur, Kerala, India</span>
                     <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)", margin: 0, textTransform: "uppercase", letterSpacing: "1px" }}>Location</p>
                   </div>
                 </motion.div>

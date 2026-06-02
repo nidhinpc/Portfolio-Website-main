@@ -1,6 +1,6 @@
 NIDHIN PERUMBADA CHANDRAN
  Mobile Application Developer
- Dubai,UAE | +91 9846871894 | nidhinpc66666@gmail.com | Portfolio: https://nidhinpc.github.io/Portfolio-Website-main
+ Thrissur,Kerala,India | +91 9846871894 | nidhinpc66666@gmail.com | Portfolio: https://nidhinpc.github.io/Portfolio-Website-main
 LinkedIn: https://www.linkedin.com/in/nidhinpc316  |  GitHub: https://github.com/nidhinpc
 TECHNICAL SKILLS
   
@@ -26,7 +26,7 @@ Git, GitHub, Android Studio, VS Code1+ years of experience as a Mobile Applicati
 using Flutter and Dart. Strong in clean architecture, state management, CI/CD automation, secure API integrations, and
 performance optimization. Proven track record delivering crash-free, production-grade apps with fast load times and
 efficient deployments. Experienced in collaborating with cross-functional teams, building real-time systems, and
-publishing apps to Google Play. Based in Dubai and open to full-time opportunities.
+publishing apps to Google Play. Based in Thrissur, Kerala, India and open to full-time opportunities.
 Developed and published Vitara Gold, a Gold SIP investment mobile application on Google Play Store.
 Integrated secure REST APIs with encrypted request and response handling for financial transactions.
 Implemented PhonePe payment gateway for seamless payment processing.
