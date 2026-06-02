@@ -34,7 +34,8 @@ function Projects() {
       imgPath: speedome,
       title: "Speedome - Home Services Booking",
       description: "A comprehensive on-demand service booking platform designed to connect users with skilled professionals. Effortlessly schedule AC mechanics, residential plumbing, electrical repairs, and other home maintenance tasks globally.",
-      ghLink: "https://github.com/nidhinpc/zeuo_near"
+      ghLink: "https://github.com/nidhinpc/zeuo_near",
+      downloadLink: "https://drive.google.com/file/d/1AgGJt40QQeJzk2t2bA_R5nNQJpqx3rjJ/view?usp=drive_link"
     },
     {
       imgPath: vitara,
@@ -86,6 +87,7 @@ function Projects() {
                     ghLink={project.ghLink}
                     demoLink={project.demoLink}
                     playstoreLink={project.playstoreLink}
+                    downloadLink={project.downloadLink}
                   />
                 </motion.div>
               </Col>

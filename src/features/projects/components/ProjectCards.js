@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { FaGooglePlay } from "react-icons/fa";
+import { AiOutlineDownload } from "react-icons/ai";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 function ProjectCards(props) {
@@ -100,6 +101,20 @@ function ProjectCards(props) {
                   style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--accent-gradient)" }}
                 >
                   <FaGooglePlay /> {"Play Store"}
+                </Button>
+              </motion.div>
+            )}
+
+            {props.downloadLink && (
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} style={{ flex: 1 }}>
+                <Button
+                  variant="primary"
+                  href={props.downloadLink}
+                  target="_blank"
+                  className="fork-btn-inner"
+                  style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--accent-gradient)" }}
+                >
+                  <AiOutlineDownload /> {"Download"}
                 </Button>
               </motion.div>
             )}
