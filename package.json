@@ -2,10 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nidhinpc.github.io/Portfolio-Website-main",
+  "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@react-pdf/renderer": "^2.2.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@testing-library/jest-dom": "^5.16.2",
