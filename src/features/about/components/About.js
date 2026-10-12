@@ -1,11 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../../components/common/Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../../assets/about.png";
-import Toolstack from "./Toolstack";
 
 import { motion } from "framer-motion";
 
@@ -64,39 +61,6 @@ function About() {
               </div>
             </Col>
           </Row>
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={sectionVariants}
-        >
-          <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
-          </h1>
-          <Techstack />
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={sectionVariants}
-        >
-          <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
-          </h1>
-          <Toolstack />
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={sectionVariants}
-        >
-          <Github />
         </motion.div>
       </Container>
     </Container>
